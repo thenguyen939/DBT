@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: adventure
+    database: adventure     
+    schema: public           
+    tables:
+      - name: product                
+      - name: region
+      - name: reseller
+      - name: sale_person_region
+      - name: sale_person
+      - name: sales
+      - name: target
+      

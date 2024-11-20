@@ -1,0 +1,66 @@
+
+version: 2
+
+models:
+  - name: st_product
+    columns:
+      - name: product_key
+      - name: product
+      - name: standard_cost
+      - name: color
+      - name: subcategory
+      - name: category
+      - name: background_color
+      - name: font_color_format
+  - name: st_region
+    columns: 
+      - name: sale_territory_key
+      - name: region
+      - name: country
+      - name: group 
+  - name: st_reseller
+    columns:
+      - name: reseller_key
+      - name: business_type
+      - name: reseller
+      - name: city
+      - name: state_province
+      - name: country_region
+  - name: st_sale_person
+    columns:
+      - name: emp_key
+      - name: emp_id
+      - name: frist_name
+      - name: last_name
+      - name: title
+      - name: upn
+  - name: st_sale_person_region
+    colunm:
+      - name: emp_key
+      - name: sale_territory_key
+  - name: st_sales
+    colunm:
+      - name: sale_order_number
+      - name: order_date
+      - name: product_key
+      - name: reseller_key
+      - name: emp_key
+      - name: sale_territory_key
+      - name: quantity
+  - name: st_target
+    colunm:
+      - name: emp_id
+      - name: target_month
+      - name: emp_target
+  - name: dim_product
+    colunm:
+      - name: product_key
+      - name: product
+      - name: standard_cost
+      - name: color
+      - name: subcategory
+      - name: category
+  - name: dim_region
+  - name: dim_reseller
+  - name: dim_seller
+  - name: fact_sale
